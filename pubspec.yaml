@@ -1,0 +1,49 @@
+name: tictactoe_app
+description: "A single-player Tic Tac Toe game using Flutter + Firebase Auth"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  sensors_plus: ^6.1.1
+  share_plus: ^11.0.0
+  audioplayers: ^6.5.0
+
+  # UI and icons
+  cupertino_icons: ^1.0.8
+
+  # 🔐 Firebase packages
+  firebase_core: ^3.15.1
+  firebase_auth: ^5.6.2
+  cloud_firestore: ^5.6.11
+
+  # 📦 Local storage and date formatting
+  shared_preferences: ^2.2.3
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sounds/draw.mp3
+    - assets/sounds/lose.mp3
+    - assets/sounds/move.mp3
+    - assets/sounds/win.mp3
+    - assets/icons/app_icon.png
